@@ -1,7 +1,7 @@
-function [x, y, z] = Sphere_to_Cart(ro, phi, theta)
+function [x, y, z] = Sphere_to_Cart(r, phi, theta)
 
-x = ro*sin(theta)*cos(phi);
-y = ro*sin(theta)*sin(phi);
-z = ro*cos(theta);
+x = r*sin(theta)*cos(phi);
+y = r*sin(theta)*sin(phi);
+z = r*cos(theta);
 
 end

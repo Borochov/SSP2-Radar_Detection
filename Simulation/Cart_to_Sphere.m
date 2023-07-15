@@ -1,7 +1,7 @@
-function [ro, phi, theta] = Cart_to_Sphere(x, y, z)
+function [r, phi, theta] = Cart_to_Sphere(x, y, z)
 
-ro = sqrt(x^2 + y^2 + z^2);
+r = sqrt(x^2 + y^2 + z^2);
 phi = arctan2(x, y);
-theta = arccos(z / ro);
+theta = arccos(z / r);
 
 end
